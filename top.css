@@ -1,0 +1,217 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+body {
+      overflow-x: hidden;
+ margin: 0;
+    padding: 0;
+    letter-spacing : 0.1em;
+}
+header {
+
+    background-color: rgba( 21, 222, 100, 0.70 );
+   color: white;
+    height:70px;
+    padding: 30px 4% 20px;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position:absolute;bottom:80px;
+}
+h1 {
+    margin: 0; padding: 0;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a1 {
+    text-decoration: none;
+    color: white;
+}
+nav {
+    margin: 0 0 0 auto;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+li {
+    margin: 0 0 0 15px;
+    font-size: 16px;
+}
+
+  .title {
+    margin-left:10%;
+    margin-right:10%;
+
+       text-align:center;
+        font-size:25px;
+
+
+
+    }
+.sp-nav {
+    display: none;
+    text-decoration: none;
+}
+
+
+
+
+/*タブ*/
+.tab-area {
+    margin-left:7px;
+    margin-right:7px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #4682b4;
+  cursor: pointer;
+
+}
+  .tab {
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+  }
+  .tab.active {
+    background-color: #b0c4de;
+    color:black;
+    border: none;
+
+  }
+
+.content-area {
+    padding-top:10px;
+     margin-left:7px;
+    margin-right:7px;
+}
+  .content {
+      padding-top:5px;
+      padding-left:5px;
+    display: none;
+  }
+  .content.show {
+    height:100%;
+    background-color:white;
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+/*ポップアップ*/
+
+  #popup{
+  width:80%;
+  line-height:80px;
+  background-color:white;
+  padding:0 4%;
+  box-sizing:border-box;
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+   border: solid;
+   z-index: 5;
+}
+
+label{
+  display:block;
+}
+label span{
+  display:block;
+  background-color:black;
+  color:#fff;
+  text-align:center;
+}
+
+input[type="checkbox"]{
+  display:none;
+}
+
+input[type="checkbox"]:checked + #popup{
+  display:block;
+  transition:.2s;
+}
+
+
+input[type="checkbox"]:checked + #popup{
+  display:block;
+  transition:.2s;
+}
+
+
+
+
+/*着せ替え*/
+#kisekae-area {
+    border: solid;
+    margin-top:7%;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+
+}
+#select-img-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.select-img {
+    border: solid 1px #000;
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    margin-right: 5px;
+    cursor: pointer;
+    height:150px;
+}
+.select-img img {
+    display: none;
+}
+.select-img img:first-child {
+    display: inline-block;
+}
+.select-img:hover {
+    background-color: #e6e6e6;
+    opacity: 0.6;
+}
+.select-img.selected {
+    background-color: #e6e6e6;
+}
+#kisekae-area img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+#kisekae-area img.base-img {
+    position: relative !important;
+    top: auto;
+    left: auto;
+    transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+}
+
+.title {
+   position:absolute; top:10px;
+}
